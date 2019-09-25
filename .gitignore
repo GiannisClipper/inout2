@@ -1,0 +1,10 @@
+# Git ignores following folders and files
+
+main/geckodriver.exe
+main/geckodriver.log
+
+main/db.sqlite3
+**/migrations
+**/__pycache__
+
+venv/

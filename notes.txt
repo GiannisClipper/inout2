@@ -1,0 +1,29 @@
+- Setup a python virtual environment:
+
+md inout2
+cd inout2
+..\inout2> python -m venv venv
+..\inout2> .\venv\scripts\activate
+
+- Install Django and DRF:
+
+(venv) ..\inout2> pip install django
+(venv) ..\inout2> pip install djangorestframework
+
+
+- Install/Setup Selenium for functional testing:
+
+(venv) ..\inout2> pip install selenium
+(venv) ..\inout2\main> (cp geckodriver.exe .)
+
+
+- Install/Setup Flake8 for linting:
+
+(venv) ..\inout2> pip install flake8
+(venv) ..\inout2\main> touch .flake8
+
+
+- Create a django project:
+
+(venv) ..\inout2> django-admin startproject main
+(venv) ..\inout2\main> python manage.py runserver
