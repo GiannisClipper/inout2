@@ -4,6 +4,7 @@ from selenium import webdriver
 
 from main.constants import WELCOME, COPYRIGHT
 
+
 class RootRequestTest(LiveServerTestCase):
 
     def setUp(self):

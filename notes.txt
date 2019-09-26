@@ -27,3 +27,13 @@ cd inout2
 
 (venv) ..\inout2> django-admin startproject main
 (venv) ..\inout2\main> python manage.py runserver
+
+
+- Add a new app in project:
+
+(venv) ..\inout2\main> python manage.py startapp appname
+add appname in INSTALLED_APPS in settings.py
+
+- Create a custom user model
+inherit a new user model
+add AUTH_USER_MODEL = 'appname.User' in settings.py
